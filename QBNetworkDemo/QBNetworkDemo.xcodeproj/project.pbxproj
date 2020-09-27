@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10D53AF212347AD68D45AB30 /* Pods_QBNetworkDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C877D887898A6069E030A7A /* Pods_QBNetworkDemoTests.framework */; };
+		35E552E44E0F435A71B4F76E /* Pods_QBNetworkDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394F511D47AC19AEC21F01A0 /* Pods_QBNetworkDemo.framework */; };
+		8E2B26BA251A128C000E54EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B26B9251A128C000E54EF /* AppDelegate.m */; };
+		8E2B26BD251A128C000E54EF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B26BC251A128C000E54EF /* SceneDelegate.m */; };
+		8E2B26C0251A128C000E54EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B26BF251A128C000E54EF /* ViewController.m */; };
+		8E2B26C3251A128C000E54EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2B26C1251A128C000E54EF /* Main.storyboard */; };
+		8E2B26C5251A128D000E54EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E2B26C4251A128D000E54EF /* Assets.xcassets */; };
+		8E2B26C8251A128D000E54EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E2B26C6251A128D000E54EF /* LaunchScreen.storyboard */; };
+		8E2B26CB251A128D000E54EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B26CA251A128D000E54EF /* main.m */; };
+		8E2B26D5251A128D000E54EF /* QBNetworkDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B26D4251A128D000E54EF /* QBNetworkDemoTests.m */; };
+		8E2B26E0251A128D000E54EF /* QBNetworkDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B26DF251A128D000E54EF /* QBNetworkDemoUITests.m */; };
+		8E2B26FC251A1379000E54EF /* TestApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2B26FB251A1379000E54EF /* TestApi.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E2B26D1251A128D000E54EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E2B26AD251A128C000E54EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E2B26B4251A128C000E54EF;
+			remoteInfo = QBNetworkDemo;
+		};
+		8E2B26DC251A128D000E54EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E2B26AD251A128C000E54EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E2B26B4251A128C000E54EF;
+			remoteInfo = QBNetworkDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A63D25379E4A7ACC2741A49 /* Pods-QBNetworkDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBNetworkDemo.release.xcconfig"; path = "Target Support Files/Pods-QBNetworkDemo/Pods-QBNetworkDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1C2C4BEEBBBD03DEEB7B5517 /* Pods-QBNetworkDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBNetworkDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-QBNetworkDemoTests/Pods-QBNetworkDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		394F511D47AC19AEC21F01A0 /* Pods_QBNetworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBNetworkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58502023CE8498FDEC62EFC6 /* Pods-QBNetworkDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBNetworkDemo.debug.xcconfig"; path = "Target Support Files/Pods-QBNetworkDemo/Pods-QBNetworkDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8E2B26B5251A128C000E54EF /* QBNetworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBNetworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E2B26B8251A128C000E54EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E2B26B9251A128C000E54EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E2B26BB251A128C000E54EF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		8E2B26BC251A128C000E54EF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		8E2B26BE251A128C000E54EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8E2B26BF251A128C000E54EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8E2B26C2251A128C000E54EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E2B26C4251A128D000E54EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E2B26C7251A128D000E54EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E2B26C9251A128D000E54EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E2B26CA251A128D000E54EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E2B26D0251A128D000E54EF /* QBNetworkDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QBNetworkDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E2B26D4251A128D000E54EF /* QBNetworkDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBNetworkDemoTests.m; sourceTree = "<group>"; };
+		8E2B26D6251A128D000E54EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E2B26DB251A128D000E54EF /* QBNetworkDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QBNetworkDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E2B26DF251A128D000E54EF /* QBNetworkDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBNetworkDemoUITests.m; sourceTree = "<group>"; };
+		8E2B26E1251A128D000E54EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E2B26FA251A1379000E54EF /* TestApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestApi.h; sourceTree = "<group>"; };
+		8E2B26FB251A1379000E54EF /* TestApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestApi.m; sourceTree = "<group>"; };
+		9C877D887898A6069E030A7A /* Pods_QBNetworkDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QBNetworkDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7D069DB7C7A77894D38241 /* Pods-QBNetworkDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QBNetworkDemoTests.release.xcconfig"; path = "Target Support Files/Pods-QBNetworkDemoTests/Pods-QBNetworkDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E2B26B2251A128C000E54EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E552E44E0F435A71B4F76E /* Pods_QBNetworkDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E2B26CD251A128D000E54EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10D53AF212347AD68D45AB30 /* Pods_QBNetworkDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E2B26D8251A128D000E54EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E2B26AC251A128C000E54EF = {
+			isa = PBXGroup;
+			children = (
+				8E2B26B7251A128C000E54EF /* QBNetworkDemo */,
+				8E2B26D3251A128D000E54EF /* QBNetworkDemoTests */,
+				8E2B26DE251A128D000E54EF /* QBNetworkDemoUITests */,
+				8E2B26B6251A128C000E54EF /* Products */,
+				E3DE0E25206BAB8EEE8111C1 /* Pods */,
+				A78B55B0A3ECD96E5E4AAB7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8E2B26B6251A128C000E54EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B26B5251A128C000E54EF /* QBNetworkDemo.app */,
+				8E2B26D0251A128D000E54EF /* QBNetworkDemoTests.xctest */,
+				8E2B26DB251A128D000E54EF /* QBNetworkDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E2B26B7251A128C000E54EF /* QBNetworkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B26B8251A128C000E54EF /* AppDelegate.h */,
+				8E2B26B9251A128C000E54EF /* AppDelegate.m */,
+				8E2B26BB251A128C000E54EF /* SceneDelegate.h */,
+				8E2B26BC251A128C000E54EF /* SceneDelegate.m */,
+				8E2B26BE251A128C000E54EF /* ViewController.h */,
+				8E2B26BF251A128C000E54EF /* ViewController.m */,
+				8E2B26FA251A1379000E54EF /* TestApi.h */,
+				8E2B26FB251A1379000E54EF /* TestApi.m */,
+				8E2B26C1251A128C000E54EF /* Main.storyboard */,
+				8E2B26C4251A128D000E54EF /* Assets.xcassets */,
+				8E2B26C6251A128D000E54EF /* LaunchScreen.storyboard */,
+				8E2B26C9251A128D000E54EF /* Info.plist */,
+				8E2B26CA251A128D000E54EF /* main.m */,
+			);
+			path = QBNetworkDemo;
+			sourceTree = "<group>";
+		};
+		8E2B26D3251A128D000E54EF /* QBNetworkDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B26D4251A128D000E54EF /* QBNetworkDemoTests.m */,
+				8E2B26D6251A128D000E54EF /* Info.plist */,
+			);
+			path = QBNetworkDemoTests;
+			sourceTree = "<group>";
+		};
+		8E2B26DE251A128D000E54EF /* QBNetworkDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E2B26DF251A128D000E54EF /* QBNetworkDemoUITests.m */,
+				8E2B26E1251A128D000E54EF /* Info.plist */,
+			);
+			path = QBNetworkDemoUITests;
+			sourceTree = "<group>";
+		};
+		A78B55B0A3ECD96E5E4AAB7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				394F511D47AC19AEC21F01A0 /* Pods_QBNetworkDemo.framework */,
+				9C877D887898A6069E030A7A /* Pods_QBNetworkDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3DE0E25206BAB8EEE8111C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58502023CE8498FDEC62EFC6 /* Pods-QBNetworkDemo.debug.xcconfig */,
+				0A63D25379E4A7ACC2741A49 /* Pods-QBNetworkDemo.release.xcconfig */,
+				1C2C4BEEBBBD03DEEB7B5517 /* Pods-QBNetworkDemoTests.debug.xcconfig */,
+				AF7D069DB7C7A77894D38241 /* Pods-QBNetworkDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E2B26B4251A128C000E54EF /* QBNetworkDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E2B26E4251A128D000E54EF /* Build configuration list for PBXNativeTarget "QBNetworkDemo" */;
+			buildPhases = (
+				EB221C022C01E3246E8D782A /* [CP] Check Pods Manifest.lock */,
+				8E2B26B1251A128C000E54EF /* Sources */,
+				8E2B26B2251A128C000E54EF /* Frameworks */,
+				8E2B26B3251A128C000E54EF /* Resources */,
+				1E45E5635C3080274579017F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QBNetworkDemo;
+			productName = QBNetworkDemo;
+			productReference = 8E2B26B5251A128C000E54EF /* QBNetworkDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E2B26CF251A128D000E54EF /* QBNetworkDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E2B26E7251A128D000E54EF /* Build configuration list for PBXNativeTarget "QBNetworkDemoTests" */;
+			buildPhases = (
+				58914C2D6EC48BD951DA6679 /* [CP] Check Pods Manifest.lock */,
+				8E2B26CC251A128D000E54EF /* Sources */,
+				8E2B26CD251A128D000E54EF /* Frameworks */,
+				8E2B26CE251A128D000E54EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E2B26D2251A128D000E54EF /* PBXTargetDependency */,
+			);
+			name = QBNetworkDemoTests;
+			productName = QBNetworkDemoTests;
+			productReference = 8E2B26D0251A128D000E54EF /* QBNetworkDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E2B26DA251A128D000E54EF /* QBNetworkDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E2B26EA251A128D000E54EF /* Build configuration list for PBXNativeTarget "QBNetworkDemoUITests" */;
+			buildPhases = (
+				8E2B26D7251A128D000E54EF /* Sources */,
+				8E2B26D8251A128D000E54EF /* Frameworks */,
+				8E2B26D9251A128D000E54EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E2B26DD251A128D000E54EF /* PBXTargetDependency */,
+			);
+			name = QBNetworkDemoUITests;
+			productName = QBNetworkDemoUITests;
+			productReference = 8E2B26DB251A128D000E54EF /* QBNetworkDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E2B26AD251A128C000E54EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					8E2B26B4251A128C000E54EF = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					8E2B26CF251A128D000E54EF = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 8E2B26B4251A128C000E54EF;
+					};
+					8E2B26DA251A128D000E54EF = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 8E2B26B4251A128C000E54EF;
+					};
+				};
+			};
+			buildConfigurationList = 8E2B26B0251A128C000E54EF /* Build configuration list for PBXProject "QBNetworkDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E2B26AC251A128C000E54EF;
+			productRefGroup = 8E2B26B6251A128C000E54EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E2B26B4251A128C000E54EF /* QBNetworkDemo */,
+				8E2B26CF251A128D000E54EF /* QBNetworkDemoTests */,
+				8E2B26DA251A128D000E54EF /* QBNetworkDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E2B26B3251A128C000E54EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E2B26C8251A128D000E54EF /* LaunchScreen.storyboard in Resources */,
+				8E2B26C5251A128D000E54EF /* Assets.xcassets in Resources */,
+				8E2B26C3251A128C000E54EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E2B26CE251A128D000E54EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E2B26D9251A128D000E54EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E45E5635C3080274579017F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QBNetworkDemo/Pods-QBNetworkDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QBNetworkDemo/Pods-QBNetworkDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QBNetworkDemo/Pods-QBNetworkDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58914C2D6EC48BD951DA6679 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QBNetworkDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB221C022C01E3246E8D782A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QBNetworkDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E2B26B1251A128C000E54EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E2B26C0251A128C000E54EF /* ViewController.m in Sources */,
+				8E2B26BA251A128C000E54EF /* AppDelegate.m in Sources */,
+				8E2B26FC251A1379000E54EF /* TestApi.m in Sources */,
+				8E2B26CB251A128D000E54EF /* main.m in Sources */,
+				8E2B26BD251A128C000E54EF /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E2B26CC251A128D000E54EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E2B26D5251A128D000E54EF /* QBNetworkDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E2B26D7251A128D000E54EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E2B26E0251A128D000E54EF /* QBNetworkDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E2B26D2251A128D000E54EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E2B26B4251A128C000E54EF /* QBNetworkDemo */;
+			targetProxy = 8E2B26D1251A128D000E54EF /* PBXContainerItemProxy */;
+		};
+		8E2B26DD251A128D000E54EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E2B26B4251A128C000E54EF /* QBNetworkDemo */;
+			targetProxy = 8E2B26DC251A128D000E54EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E2B26C1251A128C000E54EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E2B26C2251A128C000E54EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E2B26C6251A128D000E54EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E2B26C7251A128D000E54EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E2B26E2251A128D000E54EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E2B26E3251A128D000E54EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E2B26E5251A128D000E54EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58502023CE8498FDEC62EFC6 /* Pods-QBNetworkDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ER283WPG8S;
+				INFOPLIST_FILE = QBNetworkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqb.QBNetworkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E2B26E6251A128D000E54EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A63D25379E4A7ACC2741A49 /* Pods-QBNetworkDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ER283WPG8S;
+				INFOPLIST_FILE = QBNetworkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqb.QBNetworkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8E2B26E8251A128D000E54EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C2C4BEEBBBD03DEEB7B5517 /* Pods-QBNetworkDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ER283WPG8S;
+				INFOPLIST_FILE = QBNetworkDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqb.QBNetworkDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QBNetworkDemo.app/QBNetworkDemo";
+			};
+			name = Debug;
+		};
+		8E2B26E9251A128D000E54EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF7D069DB7C7A77894D38241 /* Pods-QBNetworkDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ER283WPG8S;
+				INFOPLIST_FILE = QBNetworkDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqb.QBNetworkDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QBNetworkDemo.app/QBNetworkDemo";
+			};
+			name = Release;
+		};
+		8E2B26EB251A128D000E54EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ER283WPG8S;
+				INFOPLIST_FILE = QBNetworkDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqb.QBNetworkDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QBNetworkDemo;
+			};
+			name = Debug;
+		};
+		8E2B26EC251A128D000E54EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ER283WPG8S;
+				INFOPLIST_FILE = QBNetworkDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lqb.QBNetworkDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QBNetworkDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E2B26B0251A128C000E54EF /* Build configuration list for PBXProject "QBNetworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2B26E2251A128D000E54EF /* Debug */,
+				8E2B26E3251A128D000E54EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E2B26E4251A128D000E54EF /* Build configuration list for PBXNativeTarget "QBNetworkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2B26E5251A128D000E54EF /* Debug */,
+				8E2B26E6251A128D000E54EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E2B26E7251A128D000E54EF /* Build configuration list for PBXNativeTarget "QBNetworkDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2B26E8251A128D000E54EF /* Debug */,
+				8E2B26E9251A128D000E54EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E2B26EA251A128D000E54EF /* Build configuration list for PBXNativeTarget "QBNetworkDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E2B26EB251A128D000E54EF /* Debug */,
+				8E2B26EC251A128D000E54EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E2B26AD251A128C000E54EF /* Project object */;
+}
