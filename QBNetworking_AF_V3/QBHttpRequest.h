@@ -139,6 +139,7 @@ typedef void(^QBRequestCompletionBlock)(__kindof QBHttpRequest *request);
 #pragma mark - response Preprocess
 /// @note Subclass Override
 - (void)requestCompletePreprocessor;
+- (void)requestFailedPreprocessor;
 
 #pragma mark - Request Action
 

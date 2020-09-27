@@ -41,6 +41,10 @@
   //
 };
 
+- (void)requestFailedPreprocessor {
+    //
+}
+
 #pragma mark - Public
 - (BOOL)statusCodeValidator {
     NSInteger statusCode = [self responseStatusCode];

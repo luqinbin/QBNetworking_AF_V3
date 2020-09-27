@@ -446,6 +446,9 @@
     QBNetworkLog(@"Request %@ failed, error code = %ld, error = %@",
                  NSStringFromClass([request class]), (long)error.code, error.localizedDescription
                  );
+    @autoreleasepool {
+        [request requestFailedPreprocessor];
+    }
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [request toggleAccessoriesWillStopCallBack];
