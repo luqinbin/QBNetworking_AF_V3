@@ -9,10 +9,10 @@ Pod::Spec.new do |s|
                     "luqinbin" => "751536545@qq.com",
  }
   s.source        = { :git => "https://github.com/luqinbin/QBNetworking_AF_V3.git", :tag => s.version.to_s }
-  s.source_files  = "QBNetwork/**/*.{h,m}"
+  s.source_files  = "QBNetworking_AF_V3/**/*.{h,m}"
   s.requires_arc  = true
 
-  s.private_header_files = "QBNetwork/Private/*.h"
+  s.private_header_files = "QBNetworking_AF_V3/Private/*.h"
 
   s.ios.deployment_target = "11.0"
   s.framework = "CFNetwork"
