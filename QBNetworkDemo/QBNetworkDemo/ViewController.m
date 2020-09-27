@@ -28,9 +28,9 @@
         NSString *str = request.responseString;
     };
     
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//        [self.testApi stop];
-//    });
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.testApi stop];
+    });
     
     self.testApi.failureCompletionBlock = ^(__kindof QBHttpRequest * _Nonnull request) {
         NSError *err = request.error;
