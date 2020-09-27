@@ -4,7 +4,7 @@ platform :ios, '11.0'
 
 target 'QBNetworkDemo' do
 
- pod 'QBNetworking', :path => '../../QBNetwork'
+ pod 'QBNetworking_AF_V3', :path => '../'
 
 end
 

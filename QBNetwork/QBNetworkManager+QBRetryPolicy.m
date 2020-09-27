@@ -23,7 +23,8 @@
                       success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                       failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure {
     NSURLSessionDataTask *task = [self requestWithRetryRemaining:retryCount maxRetry:retryCount retryInterval:retryInterval retryProgressive:retryProgressive fatalStatusCodes:fatalStatusCodes originalRequestCreator:^NSURLSessionDataTask *(void (^retryBlock)(NSURLSessionDataTask *, NSError *)) {
-        return [self.manager GET:URLString parameters:parameters headers:headers progress:downloadProgress success:success failure:retryBlock];
+        [self requestSerializerSetHeaders:headers];
+        return [self.manager GET:URLString parameters:parameters progress:downloadProgress success:success failure:retryBlock];
     } originalFailure:failure];
     
     return task;
@@ -40,9 +41,9 @@
                       success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
                       failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure {
     NSURLSessionDataTask *task = [self requestWithRetryRemaining:retryCount maxRetry:retryCount retryInterval:retryInterval retryProgressive:retryProgressive fatalStatusCodes:fatalStatusCodes originalRequestCreator:^NSURLSessionDataTask *(void (^retryBlock)(NSURLSessionDataTask *, NSError *)) {
+        [self requestSerializerSetHeaders:headers];
         return [self.manager POST:URLString
                        parameters:parameters
-                          headers:headers
                          progress:uploadProgress
                           success:success
                           failure:retryBlock];
@@ -63,9 +64,9 @@
                        success:(void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject))success
                        failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure {
     NSURLSessionDataTask *task = [self requestWithRetryRemaining:retryCount maxRetry:retryCount retryInterval:retryInterval retryProgressive:retryProgressive fatalStatusCodes:fatalStatusCodes originalRequestCreator:^NSURLSessionDataTask *(void (^retryBlock)(NSURLSessionDataTask *, NSError *)) {
+        [self requestSerializerSetHeaders:headers];
         return [self.manager POST:URLString
                        parameters:parameters
-                          headers:headers
         constructingBodyWithBlock:constructingBodyBlock
                          progress:uploadProgress
                           success:success
@@ -84,9 +85,9 @@
                        success:(nullable void (^)(NSURLSessionDataTask * _Nonnull task))success
                        failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure {
     NSURLSessionDataTask *task = [self requestWithRetryRemaining:retryCount maxRetry:retryCount retryInterval:retryInterval retryProgressive:retryProgressive fatalStatusCodes:fatalStatusCodes originalRequestCreator:^NSURLSessionDataTask *(void (^retryBlock)(NSURLSessionDataTask *, NSError *)) {
+        [self requestSerializerSetHeaders:headers];
         return [self.manager HEAD:URLString
                        parameters:parameters
-                          headers:headers
                           success:success
                           failure:retryBlock];
     } originalFailure:failure];
@@ -103,9 +104,9 @@
                       success:(void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject))success
                       failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure {
     NSURLSessionDataTask *task = [self requestWithRetryRemaining:retryCount maxRetry:retryCount retryInterval:retryInterval retryProgressive:retryProgressive fatalStatusCodes:fatalStatusCodes originalRequestCreator:^NSURLSessionDataTask *(void (^retryBlock)(NSURLSessionDataTask *, NSError *)) {
+        [self requestSerializerSetHeaders:headers];
         return [self.manager PUT:URLString
                        parameters:parameters
-                          headers:headers
                           success:success
                           failure:retryBlock];
     } originalFailure:failure];
@@ -122,9 +123,9 @@
                         success:(void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject))success
                         failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure {
     NSURLSessionDataTask *task = [self requestWithRetryRemaining:retryCount maxRetry:retryCount retryInterval:retryInterval retryProgressive:retryProgressive fatalStatusCodes:fatalStatusCodes originalRequestCreator:^NSURLSessionDataTask *(void (^retryBlock)(NSURLSessionDataTask *, NSError *)) {
+        [self requestSerializerSetHeaders:headers];
         return [self.manager PATCH:URLString
                         parameters:parameters
-                           headers:headers
                            success:success
                            failure:retryBlock];
     } originalFailure:failure];
@@ -141,9 +142,9 @@
                          success:(void (^)(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject))success
                          failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure {
     NSURLSessionDataTask *task = [self requestWithRetryRemaining:retryCount maxRetry:retryCount retryInterval:retryInterval retryProgressive:retryProgressive fatalStatusCodes:fatalStatusCodes originalRequestCreator:^NSURLSessionDataTask *(void (^retryBlock)(NSURLSessionDataTask *, NSError *)) {
+        [self requestSerializerSetHeaders:headers];
         return [self.manager DELETE:URLString
                          parameters:parameters
-                            headers:headers
                             success:success
                             failure:retryBlock];
     } originalFailure:failure];
@@ -217,6 +218,15 @@
     NSURLSessionDataTask *task = taskCreator(retryBlock);
     
     return task;
+}
+
+- (void)requestSerializerSetHeaders:(nullable NSDictionary<NSString *,NSString *> *)headers {
+    if (headers != nil) {
+        for (NSString *httpHeaderField in headers.allKeys) {
+            NSString *value = headers[httpHeaderField];
+            [self.manager.requestSerializer setValue:value forHTTPHeaderField:httpHeaderField];
+        }
+    }
 }
 
 @end

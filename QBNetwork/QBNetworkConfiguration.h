@@ -13,8 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @class AFSecurityPolicy;
 
-typedef void (^QBURLSessionTaskDidFinishCollectingMetricsBlock)(NSURLSession *session, NSURLSessionTask *task, NSURLSessionTaskMetrics * metrics) API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
-
 @interface QBNetworkConfiguration : NSObject
 
 /// eg: "https://www.baidu.com". Default is nil
@@ -44,8 +42,6 @@ typedef void (^QBURLSessionTaskDidFinishCollectingMetricsBlock)(NSURLSession *se
 @property (nonatomic, strong, nullable) NSArray<NSNumber *> *fatalStatusCodes;
 /// debug模式是否print log. Default is YES
 @property (nonatomic) BOOL debugLogEnabled;
-///  NSURLSessionTaskMetrics 请求/响应事务中收集性能指标
-@property (nonatomic, strong) QBURLSessionTaskDidFinishCollectingMetricsBlock collectingMetricsBlock API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
 
 
 - (instancetype)initWithBaseUrl:(NSString *)baseUrl cdnUrl:(NSString * _Nullable)cdnUrl;

@@ -107,7 +107,6 @@
     _manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:_configuration.sessionConfiguration];
     _manager.securityPolicy = _configuration.securityPolicy;
     _manager.completionQueue = _processingQueue;
-    [_manager setTaskDidFinishCollectingMetricsBlock:_configuration.collectingMetricsBlock];
 }
 
 - (void)addRequest:(QBHttpRequest *)request {
