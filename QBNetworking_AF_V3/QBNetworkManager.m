@@ -421,6 +421,9 @@
 
 - (void)requestDidSucceedWithRequest:(QBHttpRequest *)request {
     QBNetworkLog(@"Request: %@ success", NSStringFromClass([request class]));
+    @autoreleasepool {
+        [request requestCompletePreprocessor];
+    }
     
     dispatch_async(dispatch_get_main_queue(), ^{
         [request toggleAccessoriesWillStopCallBack];

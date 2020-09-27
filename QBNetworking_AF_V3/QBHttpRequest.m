@@ -37,6 +37,10 @@
     return nil;
 }
 
+- (void)requestCompletePreprocessor {
+  //
+};
+
 #pragma mark - Public
 - (BOOL)statusCodeValidator {
     NSInteger statusCode = [self responseStatusCode];
