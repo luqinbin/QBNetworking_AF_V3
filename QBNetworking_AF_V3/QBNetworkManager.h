@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic, readonly) AFHTTPSessionManager *manager;
 @property (strong, nonatomic, readonly) QBNetworkConfiguration *configuration;
+@property (assign, nonatomic, readonly) QBNetworkReachabilityStatus networkStatus;
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
