@@ -32,9 +32,9 @@ typedef void(^QBRequestCompletionBlock)(__kindof QBHttpRequest *request);
 
 @optional
 
-- (void)requestWillStart:(id)request;
-- (void)requestWillStop:(id)request;
-- (void)requestDidStop:(id)request;
+- (void)requestWillStart:(__kindof QBHttpRequest *)request;
+- (void)requestWillStop:(__kindof QBHttpRequest *)request;
+- (void)requestDidStop:(__kindof QBHttpRequest *)request;
 
 @end
 
