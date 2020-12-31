@@ -457,7 +457,7 @@
             [request.delegate requestFailed:request];
         }
         
-        if (request.successCompletionBlock) {
+        if (request.failureCompletionBlock) {
             request.failureCompletionBlock(request);
         }
         
